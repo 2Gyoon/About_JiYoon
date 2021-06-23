@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_JiYoon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/form-submission-handler.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+
+    <main>
+        <section class="box menu active">
+            <div class="typing">
+                <span class="typed"></span>
+            </div>
+            <div class="frame">
+                <div class="w_line"></div>
+                <ul>
+                    <li><a><h4>ABOUT ME</h4></a></li>
+                    <li><a><h4>MY SKILL</h4></a></li>
+                    <li><a><h4>PROJECT</h4></a></li>
+                    <li><a><h4>PORTFOLIO</h4></a></li>
+                    <li><a><h4>CONTACT</h4></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="box about">
+            <div class="title">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="frame">
+                <div class="pic">
+                    <img src="./img/red.jpg" alt="자기소개 이미지">
+                </div>
+                <div class="text"><!--디테일 수정-->
+                    <h2>PROFILE</h2>
+                    <p>이지윤</p>
+                    <p>1996.05.20</p>
+                    <p>교육학 전공 / 상담학 연계전공</p>
+                    <p>하이미디어 UI/UX 웹디자인&웹퍼블리셔 과정 수료</p>
+                    <p><b>좋은 결과에 대한 열망</b>과 <b>배움에 대한 열정</b>, <b>적극적으로 소통하는 태도</b>를 가지고 있습니다.<br><b>무한한 가능성</b>을 가지고 있는 새싹같은 구성원이 되겠습니다.</p>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="box skill">
+            <div class="title">
+                <h2>MY SKILL</h2>
+            </div>
+            <div class="frame">
+                <div class="bar skill_1">
+                    <h4 class="name">HTML</h4> <!--5? 6?-->
+                    <div class="per_bar_frame" skill-percent="80%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per">%</span>
+                    </div>
+                </div>
+                <div class="bar skill_2">
+                    <h4 class="name">CSS</h4> 
+                    <div class="per_bar_frame" skill-percent="70%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per">%</span>
+                    </div>
+                </div>
+                <div class="bar skill_3">
+                    <h4 class="name">JS</h4> 
+                    <div class="per_bar_frame" skill-percent="65%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per">%</span>
+                    </div>
+                </div>
+                <div class="bar skill_4">
+                    <h4 class="name">jQuery</h4> 
+                    <div class="per_bar_frame" skill-percent="75%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per">%</span>
+                    </div>
+                </div>
+                <div class="bar skill_5">
+                    <h4 class="name">PHP</h4> 
+                    <div class="per_bar_frame" skill-percent="60%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per">%</span>
+                    </div>
+                </div>
+                <div class="bar skill_6">
+                    <h4 class="name">PhotoShop</h4> 
+                    <div class="per_bar_frame" skill-percent="50%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per"></span>
+                    </div>
+                </div>
+                <div class="bar skill_7">
+                    <h4 class="name">Illustrator</h4> 
+                    <div class="per_bar_frame" skill-percent="50%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per"></span>
+                    </div>
+                </div>
+                <div class="bar skill_8">
+                    <h4 class="name">그 외</h4> 
+                    <div class="per_bar_frame" skill-percent="10%">
+                        <div class="per_bar"></div>
+                        <span class="cur_per"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box project">
+            <div class="title">
+                <h2>PROJECT</h2>
+            </div>
+
+            <div class="frame">
+                <ul id="slick-container">
+                    <li class="item">
+                        <div class="pro_img">
+                            <img src="./img/portfolio/res_pc.png" alt="반응형pc">
+                            <img src="./img/portfolio/res_t.png" alt="반응형tablet">
+                            <img src="./img/portfolio/res_m.png" alt="반응형mobile">
+                        </div>
+        
+                        <div class="pro_txt">
+                            <div class="context">
+                                <h2>FANBOARD</h2>
+                                <span>-MAIN-</span>
+                                <p>스타가 아닌 스타의 팬들이 중심이 되는 커뮤니티</p>
+                                <p>MY, HOT, NEW로 카테고리 구분</p>
+                                <p>북마크 버튼 클릭시 원의 이동과 버튼 색상 변경</p>
+                                <p>로그인과 로그아웃이 가능함</p>
+                                <p>스타 채널명을 클릭시 채널로 진입</p>
+                                <p><b>PHP, MYSQL 사용 / 반응형</b></p>
+                                <a href="http://dnlsl70.dothome.co.kr/fanboard/" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="pro_img">
+                            <img src="./img/portfolio/res_pc_ch.png" alt="반응형pc">
+                            <img src="./img/portfolio/res_t_ch.png" alt="반응형tablet">
+                            <img src="./img/portfolio/res_m_ch.png" alt="반응형mobile">
+                        </div>
+        
+                        <div class="pro_txt">
+                            <div class="context">
+                                <h2>FANBOARD</h2>
+                                <span>-CHANNEL-</span>
+                                <p>스타의 팬들이 모여 소통하는 공간</p>
+                                <p>로그인 후 우측에 프로필표시와 글쓰기, 게시글 열람 가능</p>
+                                <p>좌측 HOT 게시판에 조회수가 높은 8개 게시글 표시</p>
+                                <p>테블릿pc 사이즈 이하에서는 우측 하단 버튼 클릭시 <br>프로필과 가입 그룹 표시</p>
+                                <p><b>PHP, MYSQL 사용 / 반응형</b></p>
+                                <a href="http://dnlsl70.dothome.co.kr/fanboard/ch_ohmyg.php" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="pro_img">
+                            <img src="./img/portfolio/res_pc.png" alt="반응형pc">
+                            <img src="./img/portfolio/res_t.png" alt="반응형tablet">
+                            <img src="./img/portfolio/res_m.png" alt="반응형mobile">
+                        </div>
+                        
+                        <!-- 그룹페이지 만들지 말지 고민중 -->
+                        <div class="pro_txt">
+                            <div class="context">
+                                <h2>FANBOARD</h2>
+                                <span>-GROUP- (준비중...)</span>
+                                <p>특정 관심사를 가진 팬들이 모여 만든 소모임</p>
+                                <p>HOT 게시판과 공지 게시판을 구분</p>
+                                <p>자유게시판, 모집/홍보 게시판, 오늘의 한마디 게시판</p>
+                                <p>그룹 특성에 맞는 광고를 좌측에 배치</p>
+                                <p>기능 없이 디자인만 제작</p>
+                                <a href="#" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="box portfolio">
+            <div class="title">
+                <h2>PORTFOLIO</h2>
+            </div>
+
+            <div class="frame">
+                <ul id="slick-container2">
+                <!--     
+                    <li>
+                        <div class="port_img">
+                            <div class="site_img"></div>
+                            <div class="monitor_img"></div>
+                        </div>
+                        <div class="port_txt">
+                            <div class="context">
+                                <h2></h2>
+                                <p></p>
+                                <a href="#" target="_blank">Visit Site</a>
+                            </div>
+                        </div>
+                    </li>
+                -->
+                </ul>
+
+            </div>
+
+
+        </section>
+
+        <section class="box contact">
+            <div class="title">
+                <h2>CONTACT</h2>
+            </div>
+            <form class="gform form-elements" name="contactUs" method="POST" action="https://script.google.com/macros/s/AKfycbxx7vKECnZ3OcEJMuZfoP39NmfUWECoqGfiqgkZ/exec">
+                <div class="formlist">
+                    <ul>
+                        <li>
+                            <label for="name">이름<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="text" id="name" name="name" placeholder="성함을 입력해주세요" required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="email">답변 받을 이메일<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="email" id="email" name="email" placeholder="sample@mail.com" required>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="message">문의내용<sup>*</sup></label>
+                            <span class="inputbox">
+                                <textarea name="message" id="message" placeholder="궁금한 사항을 입력해주세요"></textarea>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="btn_box">
+                        <button type="submit" class="command_btn">보내기</button>
+                    </div>
+                </div>
+                
+                <div class="thankyou_message">
+                    <article>
+                        <h1>작성된 내용이 모두 전송되었습니다.</h1>
+                        <p>메일 확인 후 연락드리겠습니다.</p>
+                        <div class="btn_box">
+                            <a href="#" class="close">닫기</a>
+                        </div>
+                    </article>
+                </div>
+            </form>
+        </section>
+
+        <ol class="pager">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+
+        <div class="go_top">
+            <a href="#">Top</a>
+        </div>
+
+    </main>
+    
+</body>
+</html>
