@@ -13,7 +13,7 @@ body{/*overflow: hidden;*/}
 
 
 main{}
-main .box{width: 100%; height: 100vh; min-height: 450px;}
+main .box{width: 100%; height: 100vh; min-height: 700px;}
 
 /* menu */
 main .box.menu{background-color: #ffe1da; position: relative;}
@@ -43,7 +43,7 @@ main .box .title h2{font-family: 'Jua', sans-serif; font-size: 50px; color: #fff
 main .box.about{background-color: #ffd9cc; position: relative;}
 
 main .box.about .frame{width: 1200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);display: flex; justify-content: center;}
-main .box.about .frame .pic{width: 300px; height: 300px; background-color: #fff; padding: 5px;}
+main .box.about .frame .pic{width: 250px; height: 300px; background-color: #fff; padding: 5px;}
 main .box.about .frame .pic img{display: block; width: 100%; height: 100%;}
 main .box.about .frame .text{ margin-left: 50px; }/*디테일 수정*/
 main .box.about .frame .text h2{font-family: 'Jua', sans-serif; padding-bottom: 20px; color: #3f3f3f;}
@@ -145,9 +145,15 @@ main .pager li.active{background-color: #D9626B;}
 .thankyou_message article .btn_box .close{display: inline-block; padding: 6px 12px; background-color: #F79489; color: #fff; border-radius: 5px; border: 1px solid transparent; font-weight: bold;}
 .thankyou_message article .btn_box .close:hover{background-color: #fff; color: #F7838D; border: 1px solid #F79489; transition: background-color 0.5s, color 0.5s, border 0.5s;}
 
-.go_top{position: fixed; bottom: 30px; right: 30px;}
-.go_top a{display: block; width: 60px; height: 60px; background-color: #D9626B; border-radius: 50%; text-align: center; line-height: 60px; font-weight: bold; color: #fff;}
+.go_top{position: fixed; bottom: 50px; right: 50px;}
+.go_top a{display: block; width: 60px; height: 60px; background-color: #D9626B; border-radius: 50%; text-align: center; line-height: 60px; font-weight: bold; color: #fff; }
 
+
+@keyframes spin {
+0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}
+
+}
 
 @media (max-width : 1300px){
 
