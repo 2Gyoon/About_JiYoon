@@ -270,6 +270,9 @@ $(document).ready(function(){
         speed : 500,
         autoplay : false,
         slideToShow : 1,
+        dots : false,
+        
+
     });
 
 
@@ -346,6 +349,8 @@ $(document).ready(function(){
         speed : 500,
         autoplay : false,
         slideToShow : 1,
+        dots : false,
+
     });
 
 

@@ -27,8 +27,7 @@ main .box.menu .frame .w_line{position: absolute; width: 100%; height: 1px; top:
 main .box.menu .frame ul{display: flex; justify-content: center; flex-wrap: wrap;}
 main .box.menu .frame ul li{margin: 20px 10px;}
 main .box.menu .frame ul li a{display: flex; justify-content: center; align-items: center; width: 150px; height: 150px; border-radius: 8px; color: #fff; border: 1px solid rgba(255,255,255,0.6); border-right: 1px solid rgba(255,255,255,0.3); border-bottom: 1px solid rgba(255,255,255,0.3); box-shadow: 4px 4px rgba(242,131,121,0.3);backdrop-filter: blur(20px); position: relative; overflow: hidden; cursor: pointer; background-color: rgba(242,131,121,0.3);}
-/* 그림자 색 조정 */
-main .box.menu .frame ul li:hover a{transform: translateY(-20%); transition: transform 0.5s;}
+main .box.menu .frame ul li:hover a{transform: translateY(-20%); transition: transform 0.5s, background-color 0.5s; background-color: rgba(255, 0, 0, 0.3);}
 main .box.menu .frame ul li a::before{content: ""; position: absolute; top: 0; left: 0; width: 40px; height: 200px; background-color: rgba(255,255,255,0.5); transform: skew(45deg) translateX(300px); transition: transform 0.8s;}
 main .box.menu .frame ul li:hover a::before{transform: skew(45deg) translateX(-150px); }
 
@@ -68,7 +67,7 @@ main .box.skill .frame .skill_7 .per_bar_frame .per_bar{background-color: #e26bf
 main .box.skill .frame .skill_8 .per_bar_frame .per_bar{background-color: #8e8e8e;}
 
 main .box.skill .frame .bar .per_bar_frame .cur_per{line-height: 40px; position: absolute; top: 0; right: 10px; color: #333; font-size: 13px;}
-main .box.skill .frame .bar.skill_8 .per_bar_frame .cur_per{left: 80px;}
+main .box.skill .frame .bar.skill_8 .per_bar_frame .cur_per{left: calc(10% + 5px);}
 
 /* project */
 main .box.project{background-color: #ffe1da; position: relative;}
@@ -89,7 +88,8 @@ main .box.project .frame ul li .pro_txt .context p{padding-bottom: 8px;  font-si
 main .box.project .frame ul li .pro_txt .context a{display: block; font-weight: bold; color: #f53d6f;  font-size: 15px; margin: 30px auto 0; width: 80px; line-height: 30px; background-color: #fff; border-radius: 20px;}
 main .box.project .frame ul li .pro_txt .context a:hover{background-color: #f53d6f; color: #fff; transition: background-color 0.5s, color 0.5s;}
 
-
+.slick-prev{left: -60px;}
+.slick-next{right: -60px;}
 
 
 
@@ -146,14 +146,18 @@ main .pager li.active{background-color: #D9626B;}
 .thankyou_message article .btn_box .close:hover{background-color: #fff; color: #F7838D; border: 1px solid #F79489; transition: background-color 0.5s, color 0.5s, border 0.5s;}
 
 .go_top{position: fixed; bottom: 50px; right: 50px;}
-.go_top a{display: block; width: 60px; height: 60px; background-color: #D9626B; border-radius: 50%; text-align: center; line-height: 60px; font-weight: bold; color: #fff; }
+.go_top a{display: block; width: 60px; height: 60px; background-color: #D9626B; border-radius: 50%; text-align: center; line-height: 60px; font-weight: bold; color: #fff; position: relative;}
+.go_top a span{display: block; position: absolute; top: calc(50% - 2px); left: 50%; width: 50%; height: 4px; background-color: transparent; transform-origin: left; animation: animate 3s linear infinite;}
+.go_top a span::before{content: ""; position: absolute; width: 30px; height: 30px; border-radius: 50%; background-image: url(../img/spin.png); transform: rotate(105deg); background-size: cover; top: 0; right: -40px;}
 
 
-@keyframes spin {
+
+@keyframes animate {
 0% {transform: rotate(0deg);}
 100% {transform: rotate(360deg);}
 
 }
+
 
 @media (max-width : 1300px){
 
@@ -161,21 +165,145 @@ main .pager li.active{background-color: #D9626B;}
 
 @media (max-width : 1199px){
 
+    main .box.about .frame{width: 800px;}
+    main .box.about .frame .text{width: 500px;}
+    main .box.about .frame .text p:last-child{font-size: 16px;}
+
+    main .box.project .frame{width: 800px;}
+    main .box.project .frame ul li .pro_img{width: 400px;}
+    main .box.project .frame ul li .pro_img img{bottom: 50px;}
+    main .box.project .frame ul li .pro_img img:nth-child(1){width: 300px;}
+    main .box.project .frame ul li .pro_img img:nth-child(2){width: 100px; right: 60px;}
+    main .box.project .frame ul li .pro_img img:nth-child(3){width: 40px; right: 10px;}
+
+    main .box.portfolio .frame{width: 800px;}
+    main .box.portfolio .frame ul li .port_txt{width: 400px;}
+
 
 
 }
 
 @media (max-width : 1023px){
 
+    main .box.menu .typing{width: 100%;}
+
+    main .box.about .frame{width: 700px;}
+    main .box.about .frame .text{width: 400px;}
+    main .box.about .frame .text p:last-child{font-size: 15px;}
+
+    main .box.project .frame{width: 700px;}
+    main .box.project .frame ul li .pro_img{width: 350px;}
+    main .box.project .frame ul li .pro_img img:nth-child(1){}
+    main .box.project .frame ul li .pro_img img:nth-child(2){right: 20px;}
+    main .box.project .frame ul li .pro_img img:nth-child(3){right: -30px;}
+    main .box.project .frame ul li .pro_txt{width: 310px; margin-left: 40px; padding: 0;}
+    main .box.project .frame ul li .pro_txt .context p{font-size: 15px;}
+    
+    main .box.portfolio .frame{width: 700px;}
+    main .box.portfolio .frame ul li .port_img{width: 350px;}
+    main .box.portfolio .frame ul li .port_img .site_img{width: 325px; height: 185px; top: 10%;}
+    main .box.portfolio .frame ul li .port_txt{width: 350px;}
+
+
+    .go_top{display: none;}
 
 }
 
 @media (max-width : 799px){
     
+    main .box.menu .typing{width: 100%;font-size: 35px;}
+    main .box.menu .frame{top: 50%;}
+    main .box.menu .frame ul li a{width: 100px; height: 100px;}
+    main .box.menu .frame ul li a h4{font-size: 16px;}
 
+    main .box.about .frame{width: 650px;}
+    main .box.about .frame .pic{width: 200px; height: 250px;}
+    main .box.about .frame .text{width: 385px; margin-left: 30px;}
+    main .box.about .frame .text h2{padding-bottom: 15px; font-size: 22px;}
+    main .box.about .frame .text p{font-size: 15px;}
+    main .box.about .frame .text p:last-child{font-size: 15px; padding-top: 10px; word-break: keep-all;}
+
+    main .box.skill .frame{width: 500px;}
+    main .box.skill .frame .bar .name{width: 100px;}
+
+
+    main .box.project .frame{width: calc(100% - 150px);}
+    main .box.project .frame ul li{width: 100%;}
+    main .box.project .frame ul li .pro_img{width: 40%;}
+    main .box.project .frame ul li .pro_img img{bottom: 100px;}
+    main .box.project .frame ul li .pro_img img:nth-child(1){width: 250px;}
+    main .box.project .frame ul li .pro_img img:nth-child(2){width: 80px; right: -40px;}
+    main .box.project .frame ul li .pro_img img:nth-child(3){width: 30px; right: 45px; transform: rotate(0deg);}
+    main .box.project .frame ul li .pro_txt{width: 60%; margin: 0; padding: 0;}
+    main .box.project .frame ul li .pro_txt .context p{font-size: 14px;}
+
+    
+    main .box.portfolio .frame{width: calc(100% - 150px);}
+    main .box.portfolio .frame ul li{width: 100%;}
+    main .box.portfolio .frame ul li .port_img{width: 260px;}
+    main .box.portfolio .frame ul li .port_img .site_img{width: 242px; height: 140px; top:20%;}
+    main .box.portfolio .frame ul li .port_txt{width: 300px; margin-left: 20px;}
+    main .box.project .frame ul li .pro_txt .context h2{font-size: 23px;}
+    main .box.portfolio .frame ul li .port_txt .context p{font-size: 15px;}
+
+    main .pager{display: none;}
+
+    .slick-prev{left: -45px;}
+    .slick-next{right: -45px;}
 }
 
+@media (max-width :730px){
 
-@media (max-width : 767px){}
+    main .box.project .frame{width: 100%;}
+    main .box.project .frame ul li .pro_img{width: 50%; left: 50%; transform: translateX(-50%);}
+    main .box.project .frame ul li .pro_img img{bottom: 0;}
+    main .box.project .frame ul li .pro_img img:nth-child(1){width: 250px; left: 50%; transform: translateX(-50%);}
+    main .box.project .frame ul li .pro_img img:nth-child(2){width: 80px; left: 0;}
+    main .box.project .frame ul li .pro_img img:nth-child(3){width: 40px; right: 5px; transform: rotate(-20deg);}
+    main .box.project .frame ul li .pro_txt{width: 100%; margin: 0; padding-top: 20px;}
+    main .box.project .frame ul li .pro_txt .context h2{font-size: 20px;}
+    main .box.project .frame ul li .pro_txt .context p{font-size: 14px;}
 
-@media (max-width : 479px){}
+    main .box.portfolio .frame{width: 100%;}
+    main .box.portfolio .frame ul li{width: 100%;}
+    main .box.portfolio .frame ul li .port_img{width: 260px;}
+    main .box.portfolio .frame ul li .port_img .site_img{width: 242px; height: 140px; top:20%;}
+    main .box.portfolio .frame ul li .port_txt{width: 100%; margin: 0; padding: 0;}
+    main .box.project .frame ul li .pro_txt .context h2{font-size: 23px;}
+    main .box.portfolio .frame ul li .port_txt .context p{font-size: 15px;}
+    
+    
+    .slick-prev{left: 25px;}
+    .slick-next{right: 25px;}
+}
+
+@media (max-width :650px){
+    main .box.about .frame{width: 100%; display: block; padding-top: 30px;}
+    main .box.about .frame .pic{margin: 0 auto;}
+    main .box.about .frame .text{text-align: center; margin: 0 auto; padding-top: 20px;}
+    
+
+
+}
+@media (max-width :500px){
+    main .box.skill .frame{width: calc(100% - 100px);}
+
+    main .box.project .frame ul li .pro_img img:nth-child(3){transform: rotate(0);}
+
+    main .box.contact form{width: calc(100% - 50px);}
+}
+
+@media (max-width : 479px){
+    main .box .title h2{font-size: 40px;}
+}
+
+@media (max-width : 375px){
+    main .box.menu .typing{font-size: 20px;}
+
+    main .box .title h2{font-size: 35px;}
+
+    main .box.about .frame .text{width: calc(100% - 10px);}
+    main .box.about .frame .text p{font-size: 14px;}
+
+    main .box.skill .frame{width: calc(100% - 50px);}
+}
