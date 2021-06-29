@@ -278,23 +278,34 @@ main .pager li.active{background-color: #D9626B;}
 }
 
 @media (max-width :650px){
+
+    main .box.menu .frame ul li a{width: 80px; height: 80px;}
+    main .box.menu .frame ul li a h4{font-size: 13px;}
+
     main .box.about .frame{width: 100%; display: block; padding-top: 30px;}
-    main .box.about .frame .pic{margin: 0 auto;}
+    main .box.about .frame .pic{margin: 0 auto; width: 150px; height: 200px;}
     main .box.about .frame .text{text-align: center; margin: 0 auto; padding-top: 20px;}
     
 
 
 }
 @media (max-width :500px){
+
+    main .box.menu .frame ul li{margin: 20px 5px;}
+
     main .box.skill .frame{width: calc(100% - 100px);}
 
     main .box.project .frame ul li .pro_img img:nth-child(3){transform: rotate(0);}
 
-    main .box.contact form{width: calc(100% - 50px);}
+    main .box.contact form{width: calc(100% - 25px);}
 }
 
 @media (max-width : 479px){
     main .box .title h2{font-size: 40px;}
+
+    main .box.menu .typing{font-size: 25px;}
+    main .box.menu .frame ul li a{width: 60px; height: 60px;}
+    main .box.menu .frame ul li a h4{font-size: 10px;}
 }
 
 @media (max-width : 375px){
@@ -302,8 +313,15 @@ main .pager li.active{background-color: #D9626B;}
 
     main .box .title h2{font-size: 35px;}
 
+    main .box.about .frame .pic{}
     main .box.about .frame .text{width: calc(100% - 10px);}
     main .box.about .frame .text p{font-size: 14px;}
 
     main .box.skill .frame{width: calc(100% - 50px);}
+}
+
+@media (max-width : 320px){
+    main .box .title h2{font-size: 30px;}
+
+    main .box.menu .frame ul li a{width: 53px; height: 53px;}
 }

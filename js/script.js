@@ -185,7 +185,7 @@ $(document).ready(function(){
 
         }
     };
-
+    /*
     function prev(evt){
         console.log(evt);
         try{
@@ -233,7 +233,8 @@ $(document).ready(function(){
 
         touchmove(event);
     });
-
+    */
+    
     // typed
 
     var typed = new Typed('.typed', {
