@@ -271,6 +271,7 @@ main .pager li.active{background-color: #D9626B;}
     main .box.portfolio .frame ul li .port_txt{width: 100%; margin: 0; padding: 0;}
     main .box.project .frame ul li .pro_txt .context h2{font-size: 23px;}
     main .box.portfolio .frame ul li .port_txt .context p{font-size: 15px;}
+    main .box.portfolio .frame ul li .port_txt .context a{margin: 15px auto 0;}
     
     
     .slick-prev{left: 25px;}
