@@ -282,9 +282,8 @@ $(document).ready(function(){
 
 
 
-
     const port_arr = [
-        ["Smmer K-pop", "여름에 듣기 좋은 K-POP를 소개하는 페이지", "summer.png", "https://2gyoon.github.io/summer_song/"],
+        ["Summer K-pop", "여름에 듣기 좋은 K-POP를 소개하는 페이지", "summer.png", "https://2gyoon.github.io/summer_song/"],
         ["온라인클래스", "PHP, MYSQL을 사용한 온라인 동영상 강의 사이트", "website.png", "http://dnlsl70.dothome.co.kr/website/"],
         ["Fashion Blog", "샘플 사이트를 참고하여 만든 클론사이트", "clone_site1.png", "https://2gyoon.github.io/clone_site1/"],
         ["장사리", "ajax를 활용하여 만든 영화 사이트", "jangsari.png", "https://2gyoon.github.io/jangsari/"],
