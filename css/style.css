@@ -89,8 +89,8 @@ main .box.project .frame ul li .pro_txt .context p{padding-bottom: 8px;  font-si
 main .box.project .frame ul li .pro_txt .context a{display: block; font-weight: bold; color: #f53d6f;  font-size: 15px; margin: 30px auto 0; width: 80px; line-height: 30px; background-color: #fff; border-radius: 20px;}
 main .box.project .frame ul li .pro_txt .context a:hover{background-color: #f53d6f; color: #fff; transition: background-color 0.5s, color 0.5s;}
 
-.slick-prev{left: -60px;}
-.slick-next{right: -60px;}
+.slick-prev{left: -60px; z-index: 10;}
+.slick-next{right: -60px; z-index: 10;}
 
 
 
