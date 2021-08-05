@@ -162,6 +162,8 @@ $(document).ready(function(){
         }
     });
 
+    //<<<<<<<<터치는 조금 더 공부 후에 다시 제작하기>>>>>>>
+
     //모바일 환경에서는 터치 기반 - touchstart(최초로 화면을 누른 시점에서 발생하는 이벤트), touchend(드래그 이후의 손가락을 화면에서 떼는 시점에서 발생하는 이벤트)
 
     var $t_start; //최초로 터치한 Y축의 위치값
@@ -283,21 +285,21 @@ $(document).ready(function(){
 
 
     const port_arr = [
-        ["Summer K-pop", "여름에 듣기 좋은 K-POP를 소개하는 페이지", "summer.png", "https://2gyoon.github.io/summer_song/"],
-        ["온라인클래스", "PHP, MYSQL을 사용한 온라인 동영상 강의 사이트", "website.png", "http://dnlsl70.dothome.co.kr/website/"],
-        ["Fashion Blog", "샘플 사이트를 참고하여 만든 클론사이트", "clone_site1.png", "https://2gyoon.github.io/clone_site1/"],
-        ["장사리", "ajax를 활용하여 만든 영화 사이트", "jangsari.png", "https://2gyoon.github.io/jangsari/"],
-        ["Weather App", "ajax와 openweathermap을 활용한 날씨웹앱", "weatherapp.png", "https://2gyoon.github.io/weatherapp/"],
-        ["Inspace", "건축, 인테리어 사이트", "inspace.png", "https://2gyoon.github.io/inspace/"],
-        ["FilmMaker", "영화인 커뮤니티", "audition.png", "https://2gyoon.github.io/audition/"],
-        ["Origin", "아이들을 위한 공연 반응형 사이트", "origin.png", "https://2gyoon.github.io/origin/"],
-        ["BnO-Play", "음향기기 판매 사이트", "BnO-Play.png", "https://2gyoon.github.io/BnO-Play/"],
-        ["TheAisle", "웨딩사이트", "wedding.png", "https://2gyoon.github.io/wedding/"],
-        ["극예술연구회", "연극정보 반응형 사이트", "theater.png", "https://2gyoon.github.io/theater/"],
-        ["InvestPlan", "투자설계사이트", "investplan.png", "https://2gyoon.github.io/investplan/"],
-        ["Cashmere", "온라인 캐시미어 의류사이트", "cashmere.png", "https://2gyoon.github.io/cashmere/"],
-        ["세종병원", "세종병원 웹사이트", "hospital.png", "https://2gyoon.github.io/hospital/"],
-        ["Kuliner", "레스토랑 소개 웹사이트", "Kuliner.png", "https://2gyoon.github.io/Kuliner/"],
+        ["Summer K-pop", "여름에 듣기 좋은 K-POP를 소개하는 페이지","css animation과 keyframes을 활용","summer.png", "https://2gyoon.github.io/summer_song/"],
+        ["온라인클래스", "PHP, MYSQL을 사용한 온라인 동영상 강의 사이트","게시판, 메시지보내기, 회원가입, 로그인 기능 실습", "website.png", "http://dnlsl70.dothome.co.kr/website/"],
+        ["Fashion Blog", "클론사이트, 메인과 패션 카테고리 제작","원본사이트 : https://the7.io/fashion-blog/fashion/", "clone_site1.png", "https://2gyoon.github.io/clone_site1/"],
+        ["장사리", "ajax를 활용하여 만든 영화 사이트","반응형으로 제작", "jangsari.png", "https://2gyoon.github.io/jangsari/"],
+        ["Weather App", "ajax와 openweathermap을 활용한 날씨웹앱","API 활용 실습", "weatherapp.png", "https://2gyoon.github.io/weatherapp/"],
+        ["Inspace", "건축, 인테리어 사이트","자동슬라이드, 탭박스 실습", "inspace.png", "https://2gyoon.github.io/inspace/"],
+        ["FilmMaker", "영화인 커뮤니티","", "audition.png", "https://2gyoon.github.io/audition/"],
+        ["Origin", "아이들을 위한 공연 안내 사이트","반응형으로 제작", "origin.png", "https://2gyoon.github.io/origin/"],
+        ["BnO-Play", "음향기기 판매 사이트","", "BnO-Play.png", "https://2gyoon.github.io/BnO-Play/"],
+        ["TheAisle", "웨딩사이트","", "wedding.png", "https://2gyoon.github.io/wedding/"],
+        ["극예술연구회", "연극정보 안내 사이트","반응형으로 제작", "theater.png", "https://2gyoon.github.io/theater/"],
+        ["InvestPlan", "투자설계사이트","5개 페이지로 제작", "investplan.png", "https://2gyoon.github.io/investplan/"],
+        ["Cashmere", "온라인 캐시미어 의류사이트","", "cashmere.png", "https://2gyoon.github.io/cashmere/"],
+        ["세종병원", "세종병원 웹사이트","이중 메뉴영역 실습", "hospital.png", "https://2gyoon.github.io/hospital/"],
+        ["Kuliner", "레스토랑 소개 웹사이트","구글 맵 API 활용 실습", "Kuliner.png", "https://2gyoon.github.io/Kuliner/"],
         
     ];
 
@@ -310,6 +312,7 @@ $(document).ready(function(){
         <div class="port_txt">
             <div class="context">
                 <h2></h2>
+                <p></p>
                 <p></p>
                 <a href="#" target="_blank">Visit Site</a>
             </div>
@@ -324,9 +327,10 @@ $(document).ready(function(){
 
     $(".portfolio .frame ul li").each(function(index){
         $(this).find(".context h2").text(port_arr[index][0]);
-        $(this).find(".context p").text(port_arr[index][1]);
-        $(this).find(".site_img").css("background-image", `url(./img/portfolio/${port_arr[index][2]})`);
-        $(this).find(".context a").attr("href", port_arr[index][3]);
+        $(this).find(".context p:eq(0)").text(port_arr[index][1]);
+        $(this).find(".context p:eq(1)").text(port_arr[index][2]);
+        $(this).find(".site_img").css("background-image", `url(./img/portfolio/${port_arr[index][3]})`);
+        $(this).find(".context a").attr("href", port_arr[index][4]);
     });
 
 
